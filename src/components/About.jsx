@@ -1,9 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
+import Racer from '../assets/racer1.png'
+import Racer2 from '../assets/racer2.png'
+import ArrowRight from '../assets/ArrowRight.png'
 
 const AboutContainer = styled.div`
     position: relative;
-    background: #190032;
     width: 100%;
     height: 330px;
     display: flex;
@@ -19,11 +21,11 @@ const Heading = styled.p`
 `
 
 const AboutDetails = styled.div`
+    margin: 100px auto;
     width: 100%;
     height: 686px;
     background: linear-gradient(to right, #190032, 59.38% , #001B46);
-    padding: 30px 55px;
-    border: 10px solid yellow;
+    border: 5px solid #FFAC1D;
     text-align: left;
 `
 
@@ -42,19 +44,91 @@ const Description = styled.p`
     width: 630px;
 `
 
+const DetailDiv = styled.div`
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+`
+
+const TextWrapper = styled.div`
+`
+
+const Footer = styled.div`
+    color: white;
+    text-align: right;
+    width: 650px;
+    display: flex;
+    margin-top: 0;
+`
+
+const FooterText = styled.div`
+    color: #595246;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 38px;
+    line-height: 47.88px;
+    width: 630px;
+`
+
+
 function About() {
     return (
-        <>
+        <div>
             <AboutContainer>
                 <Heading>ABOUT</Heading>
             </AboutContainer>
             <AboutDetails>
-                <Title>WHAT IS NFTY RACER</Title>
-                <Description>NFTY Racer is the blockchain think
-                    tank that is developing the first ever metaverse car club </Description>
-                <Description>It all begins with a NFTY Racer NFT genesis</Description>
+                <DetailDiv>
+                    <div>
+                        <Title>WHAT IS NFTY RACER</Title>
+                        <Description> NFTY Racer is the blockchain think tank that is developing
+                            the first ever Metaverse Car Club (patent pending). </Description>
+                        <Description>It all begins with the NFTY Racer NFT Genesis Collection -- JDM Legends… </Description>
+                    </div>
+                    <img src={Racer} alt='racer1' />
+                </DetailDiv>
+                <Footer>
+                    <FooterText>TAP TO CONTINUE</FooterText>
+                    <img src={ArrowRight} alt="Right" />
+                </Footer>
             </AboutDetails>
-        </>
+            <AboutDetails>
+                <DetailDiv>
+                    <img src={Racer2} alt='racer1' />
+                    <TextWrapper>
+                        <Title>So Why Are These NFTs The S***?</Title>
+                        <Description>Because we did the research </Description>
+                        <Description> Each JDM Legend has been painstakingly crafted to ensure accuracy to the original release numbers.</Description>
+                        <Description>NFTY Racer spent hours so that you can be assured, the rarity of the car NFTs relative to one another in the set is true to life. We’re talkin’ real deal s***
+                        </Description>
+                    </TextWrapper>
+                </DetailDiv>
+                <Footer>
+                    <FooterText>TAP TO CONTINUE</FooterText>
+                    <img src={ArrowRight} alt="Right" />
+                </Footer>
+            </AboutDetails>
+            <AboutDetails>
+                <DetailDiv>
+                    <div>
+                        <Title>WTF Do They Do?</Title>
+                        <Description>HODL & TRADING
+                            This project is like your highschool Honda that you put hundreds of thousands of miles on until you pass it down to your kids. It’s going the distance. HODL.
+                            Every NFT will be a unique variation, your dream car WILL be minted.  Search for your favorite combo and trade for your dream build! </Description>
+                        <Description>Governance
+                            The NFTY Racer Metaverse Car Club needs a vote.  Your NFT will be your vote in our governance system, so the future of NFTY Racer belongs to the club.
+                        </Description>
+                        <Description>Royalty
+                            50% of 10% secondary sales fee distributed quarterly to holders, 25% distributed to participants of game and car show activities. So basically that’s cash money and you’re getting paid!
+                        </Description>
+                    </div>
+                    <img src={Racer} alt='racer1' />
+                </DetailDiv>
+                <Footer>
+                    <FooterText>TAP TO CONTINUE</FooterText>
+                    <img src={ArrowRight} alt="Right" />
+                </Footer>
+            </AboutDetails>
+        </div>
     )
 }
 
