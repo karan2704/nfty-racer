@@ -7,13 +7,15 @@ function Garage() {
         <div>
             <img src={FadedRect} alt="Title" style={{ float: 'left' }} />
             <p style={{ float: 'left' }}>MEET THE RACERS</p>
-            <div style={{ display: 'inline-block', width: '70%' }}>
-                <img src={GaragePic} alt="GaragePic" />
-                <img src={GaragePic} alt="GaragePic" />
-                <img src={GaragePic} alt="GaragePic" />
-                <img src={GaragePic} alt="GaragePic" />
-                <img src={GaragePic} alt="GaragePic" />
-                <img src={GaragePic} alt="GaragePic" />
+            <div style={{ display: 'inline-block', width: '80%' }}>
+                <img src={GaragePic} alt="GaragePic" style={{ margin: '70px 70px' }} />
+                <img src={GaragePic} alt="GaragePic" style={{ margin: '70px 70px' }} />
+                <img src={GaragePic} alt="GaragePic" style={{ margin: '70px 70px' }} />
+                <img src={GaragePic} alt="GaragePic" style={{ margin: '70px 70px' }} />
+                <img src={GaragePic} alt="GaragePic" style={{ margin: '70px 70px' }} />
+                <img src={GaragePic} alt="GaragePic" style={{ margin: '70px 70px' }} />
+                <img src={GaragePic} alt="GaragePic" style={{ margin: '70px 70px' }} />
+                <img src={GaragePic} alt="GaragePic" style={{ margin: '70px 70px' }} />
             </div>
 
         </div>
