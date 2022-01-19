@@ -111,13 +111,13 @@ function About() {
                 <DetailDiv>
                     <div>
                         <Title>WTF Do They Do?</Title>
-                        <Description>HODL & TRADING
+                        <Description style={{ fontSize: '25px' }}>HODL & TRADING
                             This project is like your highschool Honda that you put hundreds of thousands of miles on until you pass it down to your kids. It’s going the distance. HODL.
                             Every NFT will be a unique variation, your dream car WILL be minted.  Search for your favorite combo and trade for your dream build! </Description>
-                        <Description>Governance
+                        <Description style={{ fontSize: '25px' }}>Governance
                             The NFTY Racer Metaverse Car Club needs a vote.  Your NFT will be your vote in our governance system, so the future of NFTY Racer belongs to the club.
                         </Description>
-                        <Description>Royalty
+                        <Description style={{ fontSize: '25px' }}>Royalty
                             50% of 10% secondary sales fee distributed quarterly to holders, 25% distributed to participants of game and car show activities. So basically that’s cash money and you’re getting paid!
                         </Description>
                     </div>
