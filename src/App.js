@@ -1,4 +1,5 @@
 import './App.css';
+import Navigation from './components/NavBar';
 import Home from './components/Home'
 import About from './components/About'
 import Tba from './components/Tba'
@@ -13,6 +14,7 @@ import Footer from './components/Footer'
 function App() {
   return (
     <div className="App">
+      <Navigation />
       <Home />
       <About />
       <Tba />

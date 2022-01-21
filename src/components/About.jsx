@@ -3,11 +3,13 @@ import styled from 'styled-components'
 import Racer from '../assets/racer1.png'
 import Racer2 from '../assets/racer2.png'
 import ArrowRight from '../assets/ArrowRight.png'
+import DesignL from '../assets/DesignL.png'
+import DesignR from '../assets/DesignR.png'
 
 const AboutContainer = styled.div`
     position: relative;
     width: 100%;
-    height: 330px;
+    height: 270px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,12 +19,12 @@ const Heading = styled.p`
     color: white;
     font-family: 'Racing Sans One', cursive;
     font-size: 60px;
-    line-height: 75.6px;
+    line-height: 45.6px;
 `
 
 const AboutDetails = styled.div`
     margin: 100px auto;
-    width: 100%;
+    width: 98%;
     height: 686px;
     background: linear-gradient(to right, #190032, 59.38% , #001B46);
     border: 5px solid #FFAC1D;
@@ -56,7 +58,7 @@ const TextWrapper = styled.div`
 const Footer = styled.div`
     color: white;
     text-align: right;
-    width: 650px;
+    width: 100%;
     display: flex;
     margin-top: 0;
 `
@@ -74,7 +76,9 @@ function About() {
     return (
         <div>
             <AboutContainer>
+                <img src={DesignL} alt='' style={{ margin: 'auto 30px' }} />
                 <Heading>ABOUT</Heading>
+                <img src={DesignR} alt='' style={{ margin: 'auto 30px' }} />
             </AboutContainer>
             <AboutDetails>
                 <DetailDiv>
@@ -88,7 +92,7 @@ function About() {
                 </DetailDiv>
                 <Footer>
                     <FooterText>TAP TO CONTINUE</FooterText>
-                    <img src={ArrowRight} alt="Right" />
+                    <img src={ArrowRight} alt="Right" style={{ width: '70px', height: '70px' }} />
                 </Footer>
             </AboutDetails>
             <AboutDetails>
@@ -100,14 +104,14 @@ function About() {
                         <Description> Each JDM Legend has been painstakingly crafted to ensure accuracy to the original release numbers.</Description>
                         <Description>NFTY Racer spent hours so that you can be assured, the rarity of the car NFTs relative to one another in the set is true to life. We’re talkin’ real deal s***
                         </Description>
+                        <Footer>
+                            <FooterText>TAP TO CONTINUE</FooterText>
+                            <img src={ArrowRight} alt="Right" style={{ width: '70px', height: '70px' }} />
+                        </Footer>
                     </TextWrapper>
                 </DetailDiv>
-                <Footer>
-                    <FooterText>TAP TO CONTINUE</FooterText>
-                    <img src={ArrowRight} alt="Right" />
-                </Footer>
             </AboutDetails>
-            <AboutDetails>
+            <AboutDetails style={{ height: '760px' }}>
                 <DetailDiv>
                     <div>
                         <Title>WTF Do They Do?</Title>
@@ -125,7 +129,7 @@ function About() {
                 </DetailDiv>
                 <Footer>
                     <FooterText>TAP TO CONTINUE</FooterText>
-                    <img src={ArrowRight} alt="Right" />
+                    <img src={ArrowRight} alt="Right" style={{ width: '70px', height: '70px' }} />
                 </Footer>
             </AboutDetails>
         </div>
