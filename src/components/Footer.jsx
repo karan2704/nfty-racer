@@ -9,7 +9,7 @@ const Container = styled.div`
     border-bottom: 8px solid #FFAC1D;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin: 500px auto;
     height: 400px;
@@ -26,8 +26,8 @@ function Footer() {
     return (
         <Container>
             <div style={{ display: 'inline-block' }}>
-                <img src={Twitter} alt='TwitterLogo' style={{ margin: '35px 50px' }} />
-                <img src={Discord} alt='DiscordLogo' style={{ margin: '35px 50px' }} />
+                <img src={Twitter} alt='TwitterLogo' style={{ margin: '35px 25px 10px 25px' }} />
+                <img src={Discord} alt='DiscordLogo' style={{ margin: '35px 25px 10px 25px' }} />
             </div>
             <Description>@Copyright 2022 NFTY Racer</Description>
         </Container>
