@@ -6,10 +6,11 @@ import Tba from './components/Tba'
 import Garage from './components/Garage'
 import Manual from './components/Manual'
 import Progress from './components/Progress'
-import Crew from './assets/Crew.png'
+import Crew from './components/Crew'
 import Roadmap from './assets/Roadmap.png'
 import Faq from './components/Faq'
 import Footer from './components/Footer'
+
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
       <Garage />
       <Manual />
       <Progress />
-      <img src={Crew} alt='Crew Tab' style={{ margin: '350px auto' }} />
+      <Crew />
       <img src={Roadmap} alt='Roadmap' style={{ margin: '200px auto' }} />
       <Faq />
       <Footer />

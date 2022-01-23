@@ -13,6 +13,7 @@ const AboutContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: width 2s, height 4s;
 `
 
 const Heading = styled.p`
@@ -76,11 +77,11 @@ function About() {
     return (
         <div>
             <AboutContainer>
-                <img src={DesignL} alt='' style={{ margin: 'auto 30px' }} />
-                <Heading>ABOUT</Heading>
-                <img src={DesignR} alt='' style={{ margin: 'auto 30px' }} />
+                <img src={DesignL} alt='' style={{ margin: 'auto 30px' }} data-aos="fade-out" />
+                <Heading data-aos="fade-out">ABOUT</Heading>
+                <img src={DesignR} alt='' style={{ margin: 'auto 30px' }} data-aos="fade-out" />
             </AboutContainer>
-            <AboutDetails>
+            <AboutDetails data-aos="fade-left" data-aos-delay="200">
                 <DetailDiv>
                     <div>
                         <Title>WHAT IS NFTY RACER</Title>
@@ -95,7 +96,7 @@ function About() {
                     <img src={ArrowRight} alt="Right" style={{ width: '70px', height: '70px' }} />
                 </Footer>
             </AboutDetails>
-            <AboutDetails>
+            <AboutDetails data-aos="fade-right" data-aos-delay="200">
                 <DetailDiv>
                     <img src={Racer2} alt='racer1' />
                     <TextWrapper>
@@ -111,7 +112,7 @@ function About() {
                     </TextWrapper>
                 </DetailDiv>
             </AboutDetails>
-            <AboutDetails style={{ height: '760px' }}>
+            <AboutDetails style={{ height: '760px' }} data-aos="fade-left" data-aos-delay="200">
                 <DetailDiv>
                     <div>
                         <Title>WTF Do They Do?</Title>

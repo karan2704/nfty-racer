@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import HowTo from '../assets/Heading.png'
 import Vid1 from '../assets/Vid1.png'
 import Vid2 from '../assets/Vid2.png'
 
@@ -48,13 +49,13 @@ const ManualDiv = styled.div`
 function Manual() {
     return (
         <div style={{ width: '100%' }}>
-            <div style={{ width: '100%', height: '90px', background: 'black' }}>
-                <Heading>HOW TO MINT</Heading>
+            <div style={{ width: '100%', height: '140px', background: 'linear-gradient(to left, #0B0B0C,#18191B)' }}>
+                <img data-aos="zoom-in" src={HowTo} alt='How to mint' />
             </div>
             <Wrapper>
-                <Title>STOP!</Title>
-                <Title>READ THE F***ING MANUAL!</Title>
-                <Description>NFTY Racers Gotta Have Their Learner’s Permit First.
+                <Title data-aos="slide-up" >STOP!</Title>
+                <Title data-aos="slide-up">READ THE F***ING MANUAL!</Title>
+                <Description data-aos="slide-up" >NFTY Racers Gotta Have Their Learner’s Permit First.
                     Here are a couple of guides to get you on the road.
                 </Description>
                 <img src={Vid1} alt='Thumbnail1' />
@@ -62,7 +63,7 @@ function Manual() {
                     <img src={Vid2} alt='Thumbnail2' style={{ margin: '20px 40px' }} />
                     <img src={Vid2} alt='Thumbnail3' style={{ margin: '20px 40px' }} />
                 </div>
-                <ManualDiv>
+                <ManualDiv data-aos="zoom-in-up">
                     <Heading>NEWBIE RACER MANUAL</Heading>
                     <Description>1.   Create a Phantom Wallet or Solflare Wallet.</Description>
 

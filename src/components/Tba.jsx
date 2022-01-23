@@ -50,7 +50,7 @@ const Button = styled.button`
 function Tba() {
     return (
         <Container>
-            <TbaDiv>
+            <TbaDiv data-aos="fade-down" data-aos-delay="200">
                 <Title style={{ color: 'orange' }}>TBA</Title>
                 <Description>
                     The JDM Legends NFTs will start their <br />
@@ -59,7 +59,7 @@ function Tba() {
                 <Title style={{ color: '#595246 ' }}>CLICK HERE TO MINT</Title>
                 <img src={ArrowDown} alt="Click Below" />
                 <br />
-                <Button><Description style={{ color: 'black', fontSize: '25px', lineHeight: '10px' }}>Mint a JDM Legend or be Dead F***ing Last</Description></Button>
+                <Button data-aos="fade-down" data-aos-delay="400"><Description style={{ color: 'black', fontSize: '25px', lineHeight: '10px' }}>Mint a JDM Legend or be Dead F***ing Last</Description></Button>
             </TbaDiv>
             <img src={Flags} alt='Flags' style={{ marginTop: '330px' }} />
         </Container>

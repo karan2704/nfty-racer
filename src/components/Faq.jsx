@@ -121,17 +121,17 @@ function Faq() {
     }
     return (
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '20px' }}>
-            <img src={FAQ} alt='FAQ Button' style={{ margin: '100px, auto' }} />
+            <img data-aos="zoom-in" src={FAQ} alt='FAQ Button' style={{ margin: '100px, auto' }} />
             <FaqContainer>
                 <Select>
                     {FaqList.map((title, index) => {
                         const bg = (index === info.index) && '#F6A800'
                         return (
-                            <Button style={{ background: bg }} onClick={() => infoHandler(index)}><Heading>{FaqList[index].title}</Heading></Button>
+                            <Button data-aos="slide-down" style={{ background: bg }} onClick={() => infoHandler(index)}><Heading>{FaqList[index].title}</Heading></Button>
                         )
                     })}
                 </Select>
-                <Details>
+                <Details data-aos="zoom-in">
                     <img src={info.img} alt='img1' />
                     <Description>{info.title}</Description>
                     <Description>

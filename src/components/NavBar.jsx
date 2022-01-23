@@ -20,7 +20,7 @@ function Navigation() {
     return (
         <NavBar>
             <img src={Nav1} alt='' />
-            <img src={Nav2} alt='' />
+            <img src={Nav2} alt='' style={{ marginTop: '0' }} />
             <img src={Nav3} alt='' />
             <img src={Nav4} alt='' />
             <img src={Nav4} alt='' />

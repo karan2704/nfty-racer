@@ -11,8 +11,8 @@ const Container = styled.div`
 function Progress() {
     return (
         <Container>
-            <img src={MintProgress} alt='ProgressPoints' style={{ margin: 'auto 50px' }} />
-            <img src={ProgressMeter} alt='ProgressMeter' style={{ margin: 'auto 50px' }} />
+            <img data-aos="slide-right" data-aos-duration="4000" src={MintProgress} alt='ProgressPoints' style={{ margin: 'auto 50px' }} />
+            <img data-aos="slide-left" data-aos-duration="4000" src={ProgressMeter} alt='ProgressMeter' style={{ margin: 'auto 50px' }} />
         </Container>
     )
 }
