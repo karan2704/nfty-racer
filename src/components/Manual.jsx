@@ -4,11 +4,13 @@ import HowTo from '../assets/Heading.png'
 import Vid1 from '../assets/Vid1.png'
 import Vid2 from '../assets/Vid2.png'
 import VidControls from '../assets/VidControls.png'
+import ManualPic from '../assets/ManualPic.png'
 
 const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    position:relative;
 `
 
 const Heading = styled.p`
@@ -51,7 +53,7 @@ const Controls = styled.img`
     left: 0;
     &:hover {
     width: 270px;
-    height: 110px // <Thing> when hovered
+    height: 110px 
   }
 `
 function Manual() {
@@ -61,6 +63,7 @@ function Manual() {
                 <img data-aos="zoom-in" src={HowTo} alt='How to mint' />
             </div>
             <Wrapper>
+                <img src={ManualPic} alt='BG' style={{ position: 'absolute', width: '100%' }} />
                 <Title data-aos="slide-up" >STOP!</Title>
                 <Title data-aos="slide-up">READ THE F***ING MANUAL!</Title>
                 <Description data-aos="slide-up" >NFTY Racers Gotta Have Their Learner’s Permit First.

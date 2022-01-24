@@ -9,6 +9,7 @@ import img4 from '../assets/img4.png'
 import img5 from '../assets/img5.png'
 import img6 from '../assets/img6.png'
 import img7 from '../assets/img7.png'
+import Ele2 from '../assets/Ele2.png'
 
 const FaqContainer = styled.div`
     display: flex;
@@ -120,8 +121,10 @@ function Faq() {
         )
     }
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '20px' }}>
+        <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '20px' }}>
             <img data-aos="zoom-in" src={FAQ} alt='FAQ Button' style={{ margin: '100px, auto' }} />
+            <img src={Ele2} alt='Ele' style={{ position: 'absolute', top: '650px', left: '-100px' }} />
+            <img src={Ele2} alt='Ele' style={{ position: 'absolute', top: '1100px', left: '-100px' }} />
             <FaqContainer>
                 <Select>
                     {FaqList.map((title, index) => {

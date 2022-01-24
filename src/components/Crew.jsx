@@ -1,6 +1,7 @@
 import React from 'react';
 import CrewTitle from '../assets/Crew.png'
 import styled from 'styled-components'
+import Ele2 from '../assets/Ele2.png'
 
 const Container = styled.div`
     margin-top: 300px;
@@ -8,6 +9,7 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 `
 
 const CrewText = styled.div`
@@ -54,6 +56,8 @@ function Crew() {
     }
     return (
         <Container>
+            <img src={Ele2} alt='Ele' style={{ position: 'absolute', top: '650px', left: '-100px' }} />
+            <img src={Ele2} alt='Ele' style={{ position: 'absolute', top: '1100px', left: '-100px' }} />
             <img src={CrewTitle} alt='Crew' style={{ marginBottom: '350px' }} data-aos="slide-right" />
             <CrewText>
                 <White>
