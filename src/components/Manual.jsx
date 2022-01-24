@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import HowTo from '../assets/Heading.png'
 import Vid1 from '../assets/Vid1.png'
 import Vid2 from '../assets/Vid2.png'
-
+import VidControls from '../assets/VidControls.png'
 
 const Wrapper = styled.div`
     display: flex;
@@ -45,7 +45,15 @@ const ManualDiv = styled.div`
     border: 5px solid #FFAC1D;
     text-align: left;
 `
-
+const Controls = styled.img`
+    position: absolute;
+    top: 100px;
+    left: 0;
+    &:hover {
+    width: 270px;
+    height: 110px // <Thing> when hovered
+  }
+`
 function Manual() {
     return (
         <div style={{ width: '100%' }}>
@@ -58,10 +66,15 @@ function Manual() {
                 <Description data-aos="slide-up" >NFTY Racers Gotta Have Their Learner’s Permit First.
                     Here are a couple of guides to get you on the road.
                 </Description>
-                <img src={Vid1} alt='Thumbnail1' />
-                <div style={{ display: 'inline-block' }}>
+                <div style={{ position: 'relative' }}>
+                    <img src={Vid1} alt='Thumbnail1' style={{ top: 0, left: 0 }} />
+                    <Controls src={VidControls} alt='Play' style={{ top: '320px', left: '500px' }} />
+                </div>
+                <div style={{ display: 'inline-block', position: 'relative' }}>
                     <img src={Vid2} alt='Thumbnail2' style={{ margin: '20px 40px' }} />
+                    <Controls src={VidControls} alt='Play' style={{ top: '300px', left: '200px' }} />
                     <img src={Vid2} alt='Thumbnail3' style={{ margin: '20px 40px' }} />
+                    <Controls src={VidControls} alt='Play' style={{ top: '300px', left: 'auto', right: '200px' }} />
                 </div>
                 <ManualDiv data-aos="zoom-in-up">
                     <Heading>NEWBIE RACER MANUAL</Heading>
