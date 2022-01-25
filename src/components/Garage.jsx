@@ -20,7 +20,7 @@ function Garage() {
         <div style={{ position: 'relative' }}>
             <img src={Ele2} alt='Ele' style={{ position: 'absolute', top: '800px', left: '-100px' }} />
             <img src={Ele2} alt='Ele' style={{ position: 'absolute', top: '1300px', left: '-100px' }} />
-            <img src={Ele4} alt='Ele' style={{ position: 'absolute', top: '1300px', right: '0px' }} />
+            <img src={Ele4} alt='Ele' style={{ position: 'absolute', top: '1400px', right: '0px' }} />
             <img src={Ele4} alt='Ele' style={{ position: 'absolute', top: '1800px', right: '0px' }} />
             <img src={FadedRect} alt="Title" style={{ float: 'left' }} data-aos="fade-right" />
             <p style={{ float: 'left' }}>MEET THE RACERS</p>
