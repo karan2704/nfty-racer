@@ -104,15 +104,13 @@ function About() {
     const [page, setPage] = useState([0, 0, 0])
 
     const textChangeHandler = (index) => {
-        console.log(index);
+        let arr = page
         if (page[index] === 0) {
-            setPage(page => {
-                page[index] += 1
-            })
+            arr[index] = 1
+            setPage(arr)
         } else {
-            setPage(page => {
-                page[index] -= 1
-            })
+            arr[index] = 0
+            setPage(arr)
         }
         console.log(page)
     }
@@ -133,7 +131,6 @@ function About() {
                 <DetailDiv>
                     <div>
                         <Title>{text[0].title}</Title>
-                        <Description>{page}</Description>
                         <Description>{text[0].desc[page[0]]}</Description>
                     </div>
                     <img src={Racer} alt='racer1' />
