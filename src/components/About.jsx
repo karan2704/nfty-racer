@@ -85,8 +85,7 @@ function About() {
     const text = [
         {
             title: 'WHAT IS NFTY RACER',
-            desc: ['NFTY Racer is the blockchain think tank that is developing the first ever Metaverse Car Club (patent pending).\n\t It all begins with the NFTY Racer NFT Genesis Collection -- JDM Legends… ',
-                'JDM Legends is a set of 5,555 Japanese Domestic Market Car NFTs racing on the Solana Blockchain. These JDM legends are all uniquely generated with the properties of the 8 most iconic vehicles of the Japanese Domestic Market from the peak of tuner culture in the 90s. ']
+            desc: ['NFTY Racer is the blockchain think tank that is developing the first ever Metaverse Car Club (patent pending). It all begins with the NFTY Racer NFT Genesis Collection -- JDM Legends…', 'Solana Blockchain. These JDM legends are all uniquely generated with the properties of the 8 most iconic vehicles of the Japanese Domestic Market from the peak of tuner culture in the 90s. ']
         },
         {
             title: 'So Why Are These NFTs The S***?',
@@ -101,18 +100,33 @@ function About() {
         }
     ]
 
-    const [page, setPage] = useState([0, 0, 0])
+    const [page1, setPage1] = useState(0)
+    const [page2, setPage2] = useState(0)
+    const [page3, setPage3] = useState(0)
 
-    const textChangeHandler = (index) => {
-        let arr = page
-        if (page[index] === 0) {
-            arr[index] = 1
-            setPage(arr)
+    const textChangeHandler1 = () => {
+        if (page1 === 0) {
+            setPage1(1)
         } else {
-            arr[index] = 0
-            setPage(arr)
+            setPage1(0)
         }
-        console.log(page)
+    }
+
+    const textChangeHandler2 = () => {
+        if (page2 === 0) {
+            setPage2(1)
+        } else {
+            setPage2(0)
+        }
+        console.log(page2)
+    }
+
+    const textChangeHandler3 = () => {
+        if (page3 === 0) {
+            setPage3(1)
+        } else {
+            setPage3(0)
+        }
     }
     return (
         <div>
@@ -131,13 +145,13 @@ function About() {
                 <DetailDiv>
                     <div>
                         <Title>{text[0].title}</Title>
-                        <Description>{text[0].desc[page[0]]}</Description>
+                        <Description>{text[0].desc[page1]}</Description>
                     </div>
                     <img src={Racer} alt='racer1' />
                 </DetailDiv>
                 <Footer>
                     <FooterText>TAP TO CONTINUE</FooterText>
-                    <Button onClick={() => textChangeHandler(0)}><img src={ArrowRight} alt="Right" style={{ width: '70px', height: '70px' }} /></Button>
+                    <Button onClick={() => textChangeHandler1()}><img src={ArrowRight} alt="Right" style={{ width: '70px', height: '70px' }} /></Button>
                 </Footer>
             </AboutDetails>
             <AboutDetails data-aos="fade-right" data-aos-delay="200">
@@ -147,10 +161,10 @@ function About() {
                     <img src={Racer2} alt='racer1' />
                     <TextWrapper>
                         <Title>{text[1].title}</Title>
-                        <Description>{text[1].desc[0]}</Description>
+                        <Description>{text[1].desc[page2]}</Description>
                         <Footer>
                             <FooterText>TAP TO CONTINUE</FooterText>
-                            <img src={ArrowRight} alt="Right" style={{ width: '70px', height: '70px' }} />
+                            <Button onClick={() => textChangeHandler2()}><img src={ArrowRight} alt="Right" style={{ width: '70px', height: '70px' }} /></Button>
                         </Footer>
                     </TextWrapper>
                 </DetailDiv>
@@ -159,13 +173,13 @@ function About() {
                 <DetailDiv>
                     <div>
                         <Title>{text[2].title}</Title>
-                        <Description style={{ fontSize: '25px' }}>{text[2].desc[0]}</Description>
+                        <Description style={{ fontSize: '25px' }}>{text[2].desc[page3]}</Description>
                     </div>
                     <img src={Racer} alt='racer1' />
                 </DetailDiv>
                 <Footer>
                     <FooterText>TAP TO CONTINUE</FooterText>
-                    <img src={ArrowRight} alt="Right" style={{ width: '70px', height: '70px' }} />
+                    <Button onClick={() => textChangeHandler3()}><img src={ArrowRight} alt="Right" style={{ width: '70px', height: '70px' }} /></Button>
                 </Footer>
             </AboutDetails>
         </div>

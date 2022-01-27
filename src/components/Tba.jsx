@@ -56,10 +56,10 @@ function Tba() {
                     The JDM Legends NFTs will start their <br />
                     engines and burn some digital rubber!
                 </Description>
-                <Title style={{ color: '#595246 ' }}>CLICK HERE TO MINT</Title>
+                <Title style={{ color: '#595246 ' }}>CLICK HERE TO MINT SOON</Title>
                 <img src={ArrowDown} alt="Click Below" />
                 <br />
-                <Button data-aos="fade-down" data-aos-delay="400"><Description style={{ color: 'black', fontSize: '25px', lineHeight: '10px' }}>Mint a JDM Legend or be Dead F***ing Last</Description></Button>
+                <Button data-aos="fade-down" data-aos-delay="400"><Description style={{ color: 'black', fontSize: '25px', lineHeight: '10px' }}>Or be Dead F***ing Last</Description></Button>
             </TbaDiv>
             <img src={Flags} alt='Flags' style={{ marginTop: '330px' }} />
         </Container>
