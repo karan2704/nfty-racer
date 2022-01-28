@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import HowTo from '../assets/Heading.png'
-// import Vid1 from '../assets/Vid1.png'
+import Vid1 from '../assets/Vid1.png'
 import Vid2 from '../assets/Vid2.png'
 import VidControls from '../assets/VidControls.png'
 import ManualPic from '../assets/ManualPic.png'
@@ -74,7 +74,7 @@ function Manual() {
                     <Controls src={VidControls} alt='Play' style={{ top: '320px', left: '500px' }} />
                 </div> */}
                 <div style={{ display: 'inline-block', position: 'relative' }}>
-                    <img src={Vid2} alt='Thumbnail2' style={{ margin: '20px 40px' }} />
+                    <img src={Vid1} alt='Thumbnail2' style={{ margin: '20px 40px' }} />
                     <a href='https://www.youtube.com/watch?v=xampzXoIMwI'><Controls src={VidControls} alt='Play' style={{ top: '300px', left: '200px' }} /></a>
                     <img src={Vid2} alt='Thumbnail3' style={{ margin: '20px 40px' }} />
                     <a href='https://www.youtube.com/watch?v=wYRPwFruteI'><Controls src={VidControls} alt='Play' style={{ top: '300px', left: 'auto', right: '200px' }} /></a>

@@ -84,16 +84,19 @@ function About() {
 
     const text = [
         {
+            img: [Racer, Racer2],
             title: 'WHAT IS NFTY RACER',
             desc: ['NFTY Racer is the blockchain think tank that is developing the first ever Metaverse Car Club (patent pending). It all begins with the NFTY Racer NFT Genesis Collection -- JDM Legends…', 'Solana Blockchain. These JDM legends are all uniquely generated with the properties of the 8 most iconic vehicles of the Japanese Domestic Market from the peak of tuner culture in the 90s. ']
         },
         {
+            img: [Racer2, Racer2],
             title: 'So Why Are These NFTs The S***?',
             desc: ['Because we did the research\nEach JDM Legend has been painstakingly crafted to ensure accuracy to the original release numbers.\nNFTY Racer spent hours so that you can be assured, the rarity of the car NFTs relative to one another in the set is true to life. We’re talkin’ real deal s***',
                 'It doesn’t stop at allotment numbers, we found the original paint hex-codes, trims, rim designs, and everything else from the original release of these classic JDM cars. These historic build features are included in the ratios of our mint-allotment, so that you mint out your own unique legendary JDM racer.\nOur designer is carefully crafting a collection of custom body-kits and other drool worthy attributes if you are lucky enough to mint them. For the most fortunate drivers, we have some unique special features inspired by JDM culture!'
             ]
         },
         {
+            img: [Racer, Racer],
             title: 'WTF Do They Do?',
             desc: ['HODL & TRADING \nThis project is like your highschool Honda that you put hundreds of thousands of miles on until you pass it down to your kids. It’s going the distance. HODL. \nEvery NFT will be a unique variation, your dream car WILL be minted.  Search for your favorite combo and trade for your dream build!\nGovernance The NFTY Racer Metaverse Car Club needs a vote.  Your NFT will be your vote in our governance system, so the future of NFTY Racer belongs to the club.\n Royalty\n 50% of 10% secondary sales fee distributed quarterly to holders, 25% distributed to participants of game and car show activities. So basically that’s cash money and you’re getting paid!',
                 ' Customization\nUnlike real-life, you wont have to eat ramen or deliver tofu for a month to afford making your car unique. \n Race & WAGER  In Japanese street race culture, TALK IS CHEAP! With our NFTs you can turn the blockchain into your race track: compete in races, enter into a car meet, and compete in official NFTY Tournaments! Confident in your skills? Put your money where your mouth is. With the development of our game, you’ll be able to win some of the crypto that’s already in your portfolio. We’re not here to waste your time with a new s***coin. \nAccess\n Access to what you ask? The future racer… The future…']
@@ -147,7 +150,7 @@ function About() {
                         <Title>{text[0].title}</Title>
                         <Description>{text[0].desc[page1]}</Description>
                     </div>
-                    <img src={Racer} alt='racer1' />
+                    <img src={text[0].img[page1]} alt='racer1' />
                 </DetailDiv>
                 <Footer>
                     <FooterText>TAP TO CONTINUE</FooterText>

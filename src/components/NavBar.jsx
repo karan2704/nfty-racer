@@ -9,7 +9,14 @@ import Nav8 from '../assets/Nav8.png'
 import Nav9 from '../assets/Nav9.png'
 import Nav4 from '../assets/Nav4.png'
 import Nav5 from '../assets/Nav5.png'
+import Nav21 from '../assets/Nav21.png'
 import Nav31 from '../assets/Nav31.png'
+import Nav41 from '../assets/Nav41.png'
+import Nav51 from '../assets/Nav51.png'
+import Nav61 from '../assets/Nav61.png'
+import Nav71 from '../assets/Nav71.png'
+import Nav81 from '../assets/Nav81.png'
+import Nav91 from '../assets/Nav91.png'
 
 const NavBar = styled.div`
     position: relative;
@@ -32,9 +39,9 @@ const Image = styled.img`
 function Navigation() {
     const NavElements = [
         {
-            name: Nav2,
+            name: Nav21,
             left: '230px',
-            clicked: Nav31
+            clicked: Nav2
         },
         {
             name: Nav3,
@@ -44,32 +51,32 @@ function Navigation() {
         {
             name: Nav4,
             left: '670px',
-            clicked: Nav31
+            clicked: Nav41
         },
         {
             name: Nav5,
             left: '870px',
-            clicked: Nav31
+            clicked: Nav51
         },
         {
             name: Nav6,
             left: '1070px',
-            clicked: Nav31
+            clicked: Nav61
         },
         {
             name: Nav7,
             left: '1270px',
-            clicked: Nav31
+            clicked: Nav71
         },
         {
             name: Nav8,
             left: '1470px',
-            clicked: Nav31
+            clicked: Nav81
         },
         {
             name: Nav9,
             left: '1670px',
-            clicked: Nav31
+            clicked: Nav91
         }
     ]
 
@@ -86,11 +93,11 @@ function Navigation() {
             {NavElements.map((img, index) => {
                 var src = img.name
                 if (img.name === image) {
-                    src = Nav31
+                    src = img.clicked
                 }
                 return (
                     <Button onClick={() => clickHandler(img.name)}>
-                        <Image src={src} alt='' style={{ left: img.left }} />
+                        <Image src={src} alt='' style={{ left: img.left, maxWidth: '170px', height: '90px' }} />
                     </Button>
                 )
             })}
