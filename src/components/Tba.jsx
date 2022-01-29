@@ -27,7 +27,10 @@ const Title = styled.p`
     font-family: Racing Sans One;
     font-style: Regular;
     font-size: 40px;
-    line-height: 5px;
+    line-height: 25px;
+    @media (max-width: 768px) {
+        font-size: 30px;
+    }
 `
 
 const Description = styled.p`
@@ -36,6 +39,10 @@ const Description = styled.p`
     font-size: 38px;
     line-height: 50px;
     color: white;
+    @media (max-width: 768px){
+        font-size: 25px;
+        line-height: 35px;
+    }
 `
 
 const Button = styled.button`
@@ -59,7 +66,7 @@ function Tba() {
                 <Title style={{ color: '#595246 ' }}>CLICK HERE TO MINT SOON</Title>
                 <img src={ArrowDown} alt="Click Below" />
                 <br />
-                <Button data-aos="fade-down" data-aos-delay="400"><Description style={{ color: 'black', fontSize: '25px', lineHeight: '10px' }}>Or be Dead F***ing Last</Description></Button>
+                <Button data-aos="fade-down" data-aos-delay="400"><Description style={{ color: 'black', fontSize: '25px', lineHeight: '20px' }}>Or be Dead F***ing Last</Description></Button>
             </TbaDiv>
             <img src={Flags} alt='Flags' style={{ marginTop: '330px' }} />
         </Container>

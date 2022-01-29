@@ -14,7 +14,10 @@ const Container = styled.div`
 
 const CrewText = styled.div`
     margin: 0; 
-    display: flex;   
+    display: flex; 
+    @media (max-width: 768px){
+        flex-direction: column;
+    }  
 `
 
 const Black = styled.div`

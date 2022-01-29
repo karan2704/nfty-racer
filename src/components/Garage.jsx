@@ -18,6 +18,20 @@ const Button = styled.button`
     position: relative;
 `
 
+const Image = styled.img`
+    @media (max-width: 768px){
+        width: 800px;
+        height: 200px;
+        margin-left: -100px;
+    }
+`
+
+const Title = styled.p`
+    @media (max-width: 768px){
+        font-size: 25px;
+        line-height: 20px;
+    }
+`
 const Qty = styled.div`
     background: rgba(128, 128, 128, 0.5);
     position: absolute;
@@ -116,8 +130,8 @@ function Garage() {
             <img src={Ele2} alt='Ele' style={{ position: 'absolute', top: '1300px', left: '-100px' }} />
             <img src={Ele4} alt='Ele' style={{ position: 'absolute', top: '1400px', right: '0px' }} />
             <img src={Ele4} alt='Ele' style={{ position: 'absolute', top: '1800px', right: '0px' }} />
-            <img src={FadedRect} alt="Title" style={{ float: 'left' }} data-aos="fade-right" />
-            <p style={{ float: 'left' }}>MEET THE RACERS</p>
+            <Image src={FadedRect} alt="Title" style={{ float: 'left' }} data-aos="fade-right" />
+            <Title style={{ float: 'left' }}>MEET THE RACERS</Title>
             <div style={{ display: 'inline-block', width: '80%' }}>
                 {images.map((card, index) => {
                     const border = (index === selected) ? 'brightness(100%)' : 'brightness(30%)'

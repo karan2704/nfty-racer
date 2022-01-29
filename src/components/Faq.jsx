@@ -25,10 +25,9 @@ const Select = styled.div`
 `
 
 const Button = styled.button`
-width: 90%;
-background: rgba(0, 27,70, 0.85);
 width: 80%;
-height: 90px;
+background: rgba(0, 27,70, 0.85);
+height: 120px;
 border: 5px solid rgba(255, 172, 29, 0.7);
 border-radius: 5px;
 margin: auto auto 50px 30px;
@@ -39,21 +38,31 @@ const Heading = styled.p`
     font-family: 'Racing Sans One', cursive;
     font-size: 30px;
     line-height: 25.6px;
+    @media (max-width: 768px) {
+        font-size: 30px;
+        line-height: 25.6px;
+    }
 `
-
+const Image = styled.img`
+     @media (max-width: 768px) {
+        width: 300px;
+        height: 300px;        
+        left: 10%;
+    }
+`
 
 const Description = styled.p`
     color: white;
     font-family: 'Racing Sans One', cursive;
     font-size: 28px;
     line-height: 35px;
-    width: 630px;
+    width: 370px;
 `
 
 const Details = styled.div`
     display:flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     text-align: left;
 `
 
@@ -135,7 +144,7 @@ function Faq() {
                     })}
                 </Select>
                 <Details data-aos="zoom-in">
-                    <img src={info.img} alt='img1' />
+                    <Image src={info.img} alt='img1' />
                     <Description>{info.title}</Description>
                     <Description>
                         {info.desc}

@@ -25,6 +25,9 @@ const Title = styled.p`
     font-family: 'Racing Sans One', cursive;
     font-size: 40px;
     line-height: 40px;
+    @media (max-width: 768px){
+        line-height: 30px;
+    }
 `
 
 const Description = styled.p`
@@ -33,6 +36,10 @@ const Description = styled.p`
     font-size: 28px;
     line-height: 35px;
     width: 730px;
+    @media (max-width: 768px) {
+        font-size: 28px;
+        line-height: 35px;
+    }
 `
 
 const ManualDiv = styled.div`
@@ -46,6 +53,10 @@ const ManualDiv = styled.div`
     background: rgba(0, 27, 70, 0.85);
     border: 5px solid #FFAC1D;
     text-align: left;
+    @media (max-width: 768px) {
+        width: 97%;
+
+    }
 `
 const Controls = styled.img`
     position: absolute;
