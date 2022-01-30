@@ -3,6 +3,7 @@
   position: absolute;
   width: 100%;
   background: #12071A;
+  min-width: 768px;
 }
 
 .App-logo {

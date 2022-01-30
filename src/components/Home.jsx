@@ -17,6 +17,10 @@ width: 1440px;
 height: 1024px;
 position: relative;
 background: linear-gradient(to right, white, #0B051B);
+@media (max-width: 768px) {
+    width:100%;
+    height:1000px;
+}
 `
 const Wrapper = styled.div`
     text-align: right;

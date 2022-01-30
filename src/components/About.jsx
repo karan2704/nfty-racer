@@ -40,6 +40,9 @@ const Title = styled.p`
     font-family: 'Racing Sans One', cursive;
     font-size: 40px;
     line-height: 40px;
+    @media (max-width: 768px) {
+        width: 70%;
+    }
 `
 
 const Description = styled.p`
@@ -48,16 +51,18 @@ const Description = styled.p`
     font-size: 28px;
     line-height: 35px;
     width: 630px;
+    @media (max-width: 768px) {
+        width: 500px;  
+    }
 `
 
 const DetailDiv = styled.div`
     display: flex;
     flex-flow: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items:center;
 `
 
-const TextWrapper = styled.div`
-`
 
 const Footer = styled.div`
     color: white;
@@ -77,6 +82,13 @@ const FooterText = styled.div`
 const Button = styled.div`
     border: none;
     background: none;
+`
+
+const RacerImg = styled.img`
+    @media (max-width: 768px) {
+        width: 200px;
+        height: 400px;   
+    }
 `
 
 
@@ -146,11 +158,11 @@ function About() {
             </AboutContainer>
             <AboutDetails data-aos="fade-left" data-aos-delay="200">
                 <DetailDiv>
-                    <div>
+                    <div style={{ width: '60%', left: 0 }}>
                         <Title>{text[0].title}</Title>
                         <Description>{text[0].desc[page1]}</Description>
                     </div>
-                    <img src={text[0].img[page1]} alt='racer1' />
+                    <RacerImg src={text[0].img[page1]} alt='racer1' />
                 </DetailDiv>
                 <Footer>
                     <FooterText>TAP TO CONTINUE</FooterText>
@@ -161,24 +173,25 @@ function About() {
                 <img src={Ele1} alt='Ele' style={{ position: 'absolute', top: '900px', right: '200px' }} />
                 <img src={Ele1} alt='Ele' style={{ position: 'absolute' }} />
                 <DetailDiv>
-                    <img src={Racer2} alt='racer1' />
-                    <TextWrapper>
+                    <RacerImg src={Racer2} alt='racer1' />
+                    <div style={{ width: '60%', left: '500px' }}>
                         <Title>{text[1].title}</Title>
-                        <Description>{text[1].desc[page2]}</Description>
-                        <Footer>
-                            <FooterText>TAP TO CONTINUE</FooterText>
-                            <Button onClick={() => textChangeHandler2()}><img src={ArrowRight} alt="Right" style={{ width: '70px', height: '70px' }} /></Button>
-                        </Footer>
-                    </TextWrapper>
+                        <Description style={{ width: '500px' }}>{text[1].desc[page2]}</Description>
+                    </div>
+
                 </DetailDiv>
+                <Footer>
+                    <FooterText>TAP TO CONTINUE</FooterText>
+                    <Button onClick={() => textChangeHandler2()}><img src={ArrowRight} alt="Right" style={{ width: '70px', height: '70px' }} /></Button>
+                </Footer>
             </AboutDetails>
             <AboutDetails style={{ height: '760px' }} data-aos="fade-left" data-aos-delay="200">
                 <DetailDiv>
-                    <div>
+                    <div style={{ width: '60%', left: 0 }}>
                         <Title>{text[2].title}</Title>
                         <Description style={{ fontSize: '25px' }}>{text[2].desc[page3]}</Description>
                     </div>
-                    <img src={Racer} alt='racer1' />
+                    <RacerImg src={Racer} alt='racer1' />
                 </DetailDiv>
                 <Footer>
                     <FooterText>TAP TO CONTINUE</FooterText>

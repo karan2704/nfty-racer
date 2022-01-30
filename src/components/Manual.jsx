@@ -12,12 +12,17 @@ const Wrapper = styled.div`
     align-items: center;
     position:relative;
 `
-
+const HeaderDiv = styled.div`
+    @media (max-width: 768px){
+        visibility: hidden;
+    }
+`
 const Heading = styled.p`
     color: white;
     font-family: 'Racing Sans One', cursive;
     font-size: 60px;
-    line-height: 35.6px;
+    line-height: 25.6px;
+    margin-top: 0;
 `
 
 const Title = styled.p`
@@ -26,7 +31,7 @@ const Title = styled.p`
     font-size: 40px;
     line-height: 40px;
     @media (max-width: 768px){
-        line-height: 30px;
+        line-height: 25px;
     }
 `
 
@@ -67,12 +72,17 @@ const Controls = styled.img`
     height: 110px 
   }
 `
+
+const HeaderImg = styled.img`
+    width: 100%;
+`
 function Manual() {
     return (
         <div style={{ width: '100%' }}>
-            <div style={{ width: '100%', height: '140px', background: 'linear-gradient(to left, #0B0B0C,#18191B)' }}>
-                <img data-aos="zoom-in" src={HowTo} alt='How to mint' />
-            </div>
+            <HeaderDiv style={{ width: '100%', height: '140px', background: 'linear-gradient(to left, #0B0B0C,#18191B)' }}>
+                <HeaderImg data-aos="zoom-in" src={HowTo} alt='How to mint' />
+            </HeaderDiv>
+            <HeaderImg data-aos="zoom-in" src={HowTo} alt='How to mint' />
             <Wrapper>
                 <img src={ManualPic} alt='BG' style={{ position: 'absolute', width: '100%' }} />
                 <Title data-aos="slide-up" >STOP!</Title>
@@ -80,10 +90,6 @@ function Manual() {
                 <Description data-aos="slide-up" >NFTY Racers Gotta Have Their Learner’s Permit First.
                     Here are a couple of guides to get you on the road.
                 </Description>
-                {/* <div style={{ position: 'relative' }}>
-                    <img src={Vid1} alt='Thumbnail1' style={{ top: 0, left: 0 }} />
-                    <Controls src={VidControls} alt='Play' style={{ top: '320px', left: '500px' }} />
-                </div> */}
                 <div style={{ display: 'inline-block', position: 'relative' }}>
                     <img src={Vid1} alt='Thumbnail2' style={{ margin: '20px 40px' }} />
                     <a href='https://www.youtube.com/watch?v=xampzXoIMwI'><Controls src={VidControls} alt='Play' style={{ top: '300px', left: '200px' }} /></a>
